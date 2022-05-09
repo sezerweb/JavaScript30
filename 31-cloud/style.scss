@@ -1,0 +1,77 @@
+html{
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    background: linear-gradient(rgb(53, 149, 212), white)
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+.sun-light{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    animation-name: light;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+ 
+}
+
+@keyframes light {
+    from{ transform: rotate(0deg); }
+    to{ transform: rotate(360deg); }
+  }
+.sun-light::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 60px;
+    top:-45px;
+    left:65px;
+    background-color: orange;
+    border-radius: 20px;
+    box-shadow: 0 180px 0 0 orange;
+
+}
+
+.sun-light::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 55px;
+    top:45px;
+    left:155px;
+    background-color: orange;
+    border-radius: 20px;
+    box-shadow: 0 180px 0 0 orange;
+    transform: rotate(90deg);
+
+}
+
+
+.sun{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: orange;
+}
+
+.cloud{
+    width: 150px;
+    height: 100px;
+    background: white;
+    position: absolute;
+    opacity: .5;
+    border-radius: 50% 50% 20% 20% ;
+    left:70px
+}
