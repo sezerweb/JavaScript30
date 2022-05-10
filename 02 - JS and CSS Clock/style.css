@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #00266d url(https://unsplash.it/1500/1000?image=881&blur=5);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  font-size: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.clock {
+  width: 20rem;
+  height: 20rem;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1.5rem solid rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0.2rem 0.2rem 0.5rem #00266d, inset 0.2rem 0.2rem 0.5rem #00266d;
+          box-shadow: 0.2rem 0.2rem 0.5rem #00266d, inset 0.2rem 0.2rem 0.5rem #00266d;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hand {
+  right: 50%;
+  position: absolute;
+  -webkit-transform-origin: 100%;
+          transform-origin: 100%;
+  -webkit-transition: all 0.05s;
+  transition: all 0.05s;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition-timing-function: cubic-bezier(0.1, 1.7, 0.58, 1);
+          transition-timing-function: cubic-bezier(0.1, 1.7, 0.58, 1);
+  border-radius: 50% 0 0 50%;
+}
+
+.second {
+  width: 45%;
+  height: 2px;
+  background: #18fefe;
+}
+
+.minute {
+  height: 4px;
+  width: 40%;
+  background: #01a9ff;
+}
+
+.hour {
+  background: #0052b3;
+  width: 35%;
+  height: 8px;
+}
+
+.center {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #81b3e6;
+  z-index: 20;
+}
+
+.day {
+  width: 28px;
+  height: 20px;
+  background-color: rgba(129, 179, 230, 0.5);
+  top: calc(50% -20px);
+  left: 90%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  color: #00266d;
+  padding: 2px;
+}
+
+.dayName {
+  width: 28px;
+  height: 20px;
+  background-color: rgba(129, 179, 230, 0.5);
+  top: calc(50% -20px);
+  left: 78%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  color: #00266d;
+  padding: 2px;
+  text-transform: uppercase;
+  letter-spacing: -0.8px;
+}
+/*# sourceMappingURL=style.css.map */
